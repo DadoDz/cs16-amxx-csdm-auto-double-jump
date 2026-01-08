@@ -1,4 +1,4 @@
-#include <amxmodx>
+#include <amxmodx> 
 #include <reapi>
 
 #define PLUGIN "[CSDM] Auto Double Jump"
@@ -36,4 +36,5 @@ public PlayerPreThink(id)
 
     if ((get_entvar(id, var_button) & IN_JUMP) && (get_entvar(id, var_flags) & FL_ONGROUND))
         g_iJumpCount[id] = 0;
+
 }
